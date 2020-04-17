@@ -1,0 +1,66 @@
+[img]https://raw.githubusercontent.com/oikos1/bitcointalk-ann/master/images/defi-banner.png[/img]
+
+[size=30pt][font=Montserrat][b][color=#46bf89]Decentralized Synthetic Asset[/color][/b][/font][/size].
+[size=14pt][color=#424242][b]Oikos[/b] is a Tron port of [b]Synthetix[/b]: a synthetic asset platform that provides on-chain exposure to fiat 
+currencies,commodities, stocks, and indices. Synthetic assets (Synths) are backed by [b]Oikos Network Tokens[/b] (OKS) 
+locked into a smart contract as collateral. Synths track the prices of various assets, allowing crypto-native and unbanked
+users to trade P2C (peer-to-contract) on [b]Oikos Exchange[/b] without liquidity limitations.[/color][/size]
+
+[size=30pt][font=Montserrat][b][color=#46bf89][/color][/b][/font][/size].
+
+[size=24pt][color=#46bf89]750% collateralisation required[/color][/size] 
+       
+[size=14pt][color=#424242][b]Oikos[/b] requires 750% collateralisation for Synth issuance. So if you want to mint a hundred synthetic US dollars (USD)
+you’d need the equivalent of US$750 of [b]OKS[/b] tokens as collateral. This creates a generous buffer for Synths in circulation.[/color][/size]
+
+[size=24pt][color=#46bf89]Debt-driven[/color][/size] 
+
+[size=14pt][color=#424242]When someone mints new Synths, their 750% [b]OKS[/b] collateral is locked up, while the value of the issued Synths takes
+the form of outstanding debt. To unlock their collateral, a person needs to pay back their share of the global debt by burning 
+Synths. The 750% collateral requirement helps ensure that Synths remain collateralized even through wild market price 
+fluctuations.
+[/color][/size]
+
+[size=24pt][color=#46bf89]Exchange fees and staking rewards[/color][/size] 
+
+[size=14pt][color=#424242]By locking up OKS, issuing Synths and taking on the debt of those Synths, one also becomes a staker and starts earning 
+staking rewards. These take the form of a portion of the Oikos Exchange fees as well as a share of the inflationary supply. 
+The exchange fees are currently set at 0.3% per trade. They are put into a pool, where they can be claimed by stakers 
+proportionate to their outstanding debt. So the more Synths someone issues, the more staking fees they earn. 
+However, they can only earn staking rewards if they maintain a ~750% collateralisation ratio. 
+This incentivises people to actively maintain their personal 750% ratios.
+
+[/color][/size]
+[img]https://raw.githubusercontent.com/oikos1/bitcointalk-ann/master/images/oi-banner-slim.png[/img]
+
+[size=30pt][font=Montserrat][b][color=#46bf89]Airdrop for Synthetix token holders[/color][/b][/font][/size].
+
+[size=14pt][color=#424242]Oikos will take a snapshot of the Ethereum blockchain at a definite block height and distribute a portion of OKS token 
+to existing Synthetix token holders. This will help bootstrap our initial economy and reward both Synthetix and its users.
+[/color][/size]
+
+[size=24pt][color=#46bf89]Oikos Exchange[/color][/size] 
+
+[size=14pt][color=#424242]The Oikos decentralized exchange lets people buy and sell Synths via OKS and smart contract, without needing to rely on 
+third parties to be on the other end of the trade.
+[/color][/size]
+
+[size=24pt][color=#46bf89]Inflation[/color][/size] 
+
+[size=14pt][color=#424242]There is also system inflation, with the total amount of OKS in circulation set to increase from the initial 100 million to 
+around 250 million by 2024. This inflation will also be distributed to Synth issuers.
+[/color][/size]
+
+[size=24pt][color=#46bf89]Debt pools[/color][/size] 
+
+[size=14pt][color=#424242]All Synths in circulation add up to the global debt of the system. A Synth issuer’s individual debt is simply registered as a 
+percentage of this global debt. The USD value of this debt changes constantly based on price fluctuations of the assets tracked and their quantity in 
+circulation. Therefore, issuers act as a pooled counterparty to all Synth exchanges and take on the risk of the overall debt in the system. 
+They have the option to hedge this risk by taking positions external to the system.
+
+This system enables what is known as "infinite liquidity" trades: it's possible to convert any amount of Synths to another at a fixed price.
+
+[/color][/size]
+
+COVID-19
+Due to the nature of the system, it's possible to create all kinds of synthetic assets. For example, Oikos is planning to release a COVID-19 Synth which will track a basket of companies with a great involvement in fighting the current worldwide epidemic.
