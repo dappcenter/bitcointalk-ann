@@ -1,0 +1,172 @@
+
+
+<html>
+    <head>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"  >
+      <link rel="stylesheet" href="styles/start.css">
+      <style>
+        .pie {
+          border-radius: 100%;
+          height: calc(var(--size, 300) * 1px);
+          overflow: hidden;
+          position: relative;
+          width: calc(var(--size, 300) * 1px);
+        }
+        .pie__segment {
+          --a: calc(var(--over50, 0) * -100%);
+          --b: calc((1 + var(--over50, 0)) * 100%);
+          --degrees: calc((var(--offset, 0) / 100) * 360);
+          -webkit-clip-path: polygon(var(--a) var(--a), var(--b) var(--a), var(--b) var(--b), var(--a) var(--b));
+          clip-path: polygon(var(--a) var(--a), var(--b) var(--a), var(--b) var(--b), var(--a) var(--b));
+          height: 100%;
+          position: absolute;
+          -webkit-transform: translate(0, -50%) rotate(90deg) rotate(calc(var(--degrees) * 1deg));
+                  transform: translate(0, -50%) rotate(90deg) rotate(calc(var(--degrees) * 1deg));
+          -webkit-transform-origin: 50% 100%;
+                  transform-origin: 50% 100%;
+          width: 100%;
+          z-index: calc(1 + var(--over50));
+        }
+        .pie__segment:after,
+        .pie__segment:before {
+          background: var(--bg, #e74c3c);
+          content: '';
+          height: 100%;
+          position: absolute;
+          width: 100%;
+        }
+        .pie__segment:before {
+          --degrees: calc((var(--value, 45) / 100) * 360);
+          -webkit-transform: translate(0, 100%) rotate(calc(var(--degrees) * 1deg));
+                  transform: translate(0, 100%) rotate(calc(var(--degrees) * 1deg));
+          -webkit-transform-origin: 50% 0%;
+                  transform-origin: 50% 0%;
+        }
+        .pie__segment:after {
+          opacity: var(--over50, 0);
+        }
+        * {
+          box-sizing: border-box;
+        }
+        body {
+          -webkit-box-align: center;
+                  align-items: center;
+          background: #111;
+          color: #fafafa;
+          display: -webkit-box;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+                  flex-direction: column;
+          padding: 1rem;
+          font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+          -webkit-box-pack: center;
+                  justify-content: center;
+          min-height: 100vh;
+        }
+        label {
+          font-size: 1rem;
+          margin-bottom: 0.5rem;
+        }
+        input {
+          min-width: 80px;
+        }
+        .actions {
+          display: grid;
+          grid-gap: 4px;
+          grid-template-columns: auto auto;
+          z-index: 99;
+        }
+
+        .foo {
+          float: left;
+          width: 20px;
+          height: 20px;
+          margin: 5px;
+          border: 1px solid rgba(0, 0, 0, .2);
+        }
+
+        .fb {
+          background: #355977;
+        }
+
+        .twitter {
+          background: #1f3649;
+        }
+
+        .blog {
+          background: #262449;
+        }
+        .bitcointalk {
+          background: #36ea97;
+        }
+        .translations {
+          background: #49be89;
+        }
+        .youtube {
+          background: #dde0fa;
+        }
+        .medium {
+          background: #c2d0f3;
+        }        
+      </style>
+
+    </head>
+<body>
+ 
+  <div class="main-container">
+    <div class="row">
+      <div class="col-sm-5" style="border:0px white solid;">
+        <img src="images/oikos-logo-dark.svg" width=220px "></img>
+        <p style="color:white; font-family:Montserrat;font-size:50px;margin-top:25%">Bounty Campaign</p>
+      </div>
+      <div iclass="col-sm-3" style="margin-left:50px;border:px white solid; width:190px">
+        <div class="foo medium"></div>
+        <p style="margin-top:5px">Medium  5%</p>        
+        <br /><br /><br />
+        <div class="foo youtube"></div>
+        <p style="margin-top:5px">Youtube  10%</p>
+        <br /><br /><br />
+        <div class="foo translations" style="margin-right:25px"></div>
+        <p style="margin-top:5px"> Translations 10%</p>
+        <br /><br /><br />
+    
+        <div class="foo bitcointalk" style="margin-right:25px"></div><p style="margin-top:5px"> Bitcointalk 25%</p>
+    
+      </div>
+    <div iclass="col-sm-3">
+ 
+
+      <div class="pie">
+        <div class="pie__segment" style="--offset: 0; --value: 15; --bg: #355977;"></div>
+        <div class="pie__segment" style="--offset: 15; --value: 15; --bg: #1f3649;"></div> 
+        <div class="pie__segment" style="--offset: 30; --value: 20; --bg: #262449;"></div> 
+        <div class="pie__segment" style="--offset: 50; --value: 25; --bg: #36ea97;"></div> 
+        <div class="pie__segment" style="--offset: 75; --value: 10; --bg: #49be89;"></div> 
+        <div class="pie__segment" style="--offset: 85; --value: 10; --bg: #dde0fa;"></div> 
+        <div class="pie__segment" style="--offset: 95; --value: 5; --bg: #c2d0f3;"></div> 
+
+      </div>
+
+
+  </div>
+  <div iclass="col-sm-3" style="margin-left:50px;border:0px white solid; width:150px">
+    
+    <div class="foo fb"></div>
+    <p style="margin-top:5px">Facebook  15%</p>
+    <br /><br /><br /><br /><br />
+    <div class="foo twitter" style="margin-right:25px"></div>
+    <p style="margin-top:5px"> Twitter 15%</p>
+    <br /><br /><br /><br /><br />
+
+    <div class="foo blog" style="margin-right:25px"></div>
+    <p style="margin-top:5px"> Blog 15%</p>
+
+  </div>
+
+  </div>
+</body> 
+
+</html>
+<div class="foo purple"></div>
+<div class="foo wine"></div>
